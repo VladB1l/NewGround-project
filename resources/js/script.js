@@ -65,7 +65,7 @@ var filename = pathname[pathname.length - 1];
 function ChangeToGer() {
     var foldername = "../views_de/";
 
-    if (filename == "index.html") {
+    if (filename == "index.html" || filename == "") {
         foldername = '';
         filename = "index.de.html";
     }
@@ -82,48 +82,29 @@ function ChangeToEng() {
 }
 
 
-// var CntStorage = parseInt(sessionStorage.getItem("counter"));
-// if (isNaN(CntStorage)) {
-//     CntStorage=0;
-//     sessionStorage.setItem("counter", CntStorage);
-// }
-// sessionStorage.setItem('myLng', window.navigator.language);
-// var LngStorage = sessionStorage.getItem("myLng");
+var CntStorage = parseInt(sessionStorage.getItem("counter"));
+if (isNaN(CntStorage)) {
+    CntStorage = 0;
+    sessionStorage.setItem("counter", CntStorage);
+}
+sessionStorage.setItem('myLng', window.navigator.language);
+var LngStorage = sessionStorage.getItem("myLng");
 
-// function load_page_de() {
-//     var k = window.location.pathname.split('/');
-//     var page = k[k.length - 1].split('.');
-//     var v = "../views/";
+function LoadPageGer() {
+    if (LngStorage != 'de' && CntStorage == 0) {
+        ChangeToEng()
+    }
+    CntStorage = 1;
+    sessionStorage.setItem("counter", CntStorage);
+}
 
-
-//     if (LngStorage != 'de' && CntStorage == 0 ) {
-//         if (k == ",index.de.html") {
-//             v = " ";
-//             location.href = v + page[0] + ".html";
-//         }
-//         location.href = v + page[0] + ".html";
-//     }
-
-//     CntStorage=1;
-//     sessionStorage.setItem("counter", CntStorage);
-// }
-
-// function load_page_eng() {
-//     var k = window.location.pathname.split('/');
-//     var page = k[k.length - 1].split('.');
-//     var v = "../views_de/";
-
-//      if (LngStorage == 'de' && CntStorage == 0) {
-//         if (k == ",index.html") {
-//             v = " ";
-//             location.href = v + page[0] + ".html";
-//         }
-//         location.href = v + page[0] + ".html";
-//     }
-
-//     CntStorage=1;
-//     sessionStorage.setItem("counter", CntStorage);
-// }
+function LoadPageEng() {
+    if (LngStorage == 'de' && CntStorage == 0) {
+        ChangeToGer();
+    }
+    CntStorage = 1;
+    sessionStorage.setItem("counter", CntStorage);
+}
 
 
 // let languageFistTwo = language.substr(0,2); // To only keep the first 2 characters.
