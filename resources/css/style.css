@@ -31,8 +31,12 @@ body p, body a, body h1, body h2, body h3, body h4, body h5, body h6 {
 @media(max-width:992px){
     .nav>li>a {
         padding-left: 10px;
-        padding-right:10px
+        padding-right:10px;
     }
+    .nav-link{
+        font-size: 10px;
+    }
+
 }
 
 .container.margin-from-header {
