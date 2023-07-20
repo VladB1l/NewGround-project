@@ -1,0 +1,17 @@
+{
+  "name": "new-ground",
+  "version": "1.0.0",
+  "description": "newground web page",
+  "scripts": {
+    "watch-sass": "sass --watch ./resources/css/style.scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NewGround-LLC/NewGroundUA.github.io.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NewGround-LLC/NewGroundUA.github.io/issues"
+  },
+  "homepage": "https://github.com/NewGround-LLC/NewGroundUA.github.io#readme"
+}
