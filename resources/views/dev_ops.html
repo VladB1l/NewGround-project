@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137794670-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-137794670-1');
+    </script>
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NewGround</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- The favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="manifest" href="../../site.webmanifest">
+    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#1f6fa4">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body onload='LoadPageEng()'>
+    <div id="page_header"></div>
+    <div class="container margin-from-header">
+        <div class="about-text-container">
+            <div class="text-center">
+                <h2>DevOps automation</h2>
+            </div>
+            <h4>We provide you with analyze and optimize existing DevOps processes. </h4>
+            <p>We'll develop a strategy for moving from local, server-based, or hybrid systems to AWS clouds. We'll do
+                the migration, preparation of the project for further scaling. An important part will be finding the
+                required services from Amazon
+            </p>
+            <p>
+                We modernize existing applications, implement the system architecture and automate cloud processes in
+                order to optimize ongoing operations.
+            </p>
+            <h4>Hybrid systems cloud + server:</h4>
+            <ul>
+                <li>
+                    We'll help with the deployment of popular hybrid systems, where a local server works with cloud
+                    nodes and virtual private clouds (VPCs) from AWS
+                </li>
+            </ul>
+            <h4>Infrastructure scalability:</h4>
+            <ul>
+                <li>
+                    We will set up monitoring systems and automatic scaling of the project on AWS Auto Scaling. This
+                    will ensure the stable work of your service, regardless of the load on computing power.
+                </li>
+            </ul>
+            <h4>Work with files and databases:</h4>
+            <ul>
+                <li>
+                    We work with two main AWS systems. A distributed relational database will allow you to use Amazon
+                    RDS in your applications, and an S3 system will store any size of data. We'll take over the setup
+                    and management of the backup system or the management of your data storage.
+                </li>
+            </ul>
+            <h4>Security and monitoring:</h4>
+            <ul>
+                <li>
+                    AWS Security Group implementation, securing applications at the network level authentication.
+                    Configuring Amazon CloudWatch monitoring and observability system. We'll provide the highest level
+                    of protection for your infrastructure and application.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="contacts_form"></div>
+    <div id="page_footer"></div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.4/jquery.nicescroll.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+        $(function () {
+            $("#page_header").load("header.html");
+            $("#page_footer").load("footer.html");
+            $("#contacts_form").load("contacts_form.html");
+        });
+    </script>
+</body>
+
+</html>
