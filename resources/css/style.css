@@ -29,15 +29,21 @@ body h6 {
   height: 72px;
 }
 
-.text-border {
+.container .text-border {
   background-color: #f8f8f8;
   border: 1px solid white;
   border-radius: 15px;
   padding: 30px;
+  margin-top: 80px;
 }
 
 .text-border p {
   padding: 5px;
+  border-left: 1px solid #0077be;
+}
+
+.container.margin-from-header {
+  margin-top: 70px;
 }
 
 .navbar-toggle {
@@ -62,9 +68,6 @@ body h6 {
   }
 }
 
-.container.margin-from-header {
-  margin-top: 70px;
-}
 
 .achievements img,
 .services img,
@@ -232,6 +235,9 @@ body h6 {
 
 .about-text-container p {
   text-align: justify;
+  line-height: 25px;
+  font-size: 15px;
+  padding: 10px;
 }
 
 .technologies .icon-center img {
