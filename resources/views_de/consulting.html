@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137794670-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-137794670-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NewGround</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- The favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="manifest" href="../../site.webmanifest">
+    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#1f6fa4">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body onload='LoadPageGer()'>
+    <div id="page_header"></div>
+    <div class="container ">
+        <div class="about-text-container text-border">
+            <div class="text-center">
+                <h2 class="block-caption">Beratung</h2>
+            </div>
+            <h4>STRATEGISCHE PLANUNG</h4>
+            <p>
+                Basierend auf mehr als 20 Jahren Erfahrung bieten unser Team von Architekten und Business-Analysten
+                Organisations-Workshops mit intensiver Beteiligung des Kunden an, um Geschäftsanforderungen zu bewerten,
+                Ideen und Verbesserungsmöglichkeiten zu generieren, nächste Schritte für die Umsetzung der gesetzten
+                Ziele zu diskutieren und zu planen. Jeder Schritt dieser Planungsphase und der folgenden wird mit
+                entsprechenden Dokumenten festgehalten, deren geistiges Eigentum beim Kunden liegt.
+            </p>
+            <h4>ARCHITEKTURPLANUNG</h4>
+            <p>
+                Nach Festlegung der strategischen Ziele schlagen wir die weiteren Planungsschritte für die
+                Architektur-Entwicklung, Infrastrukturplanung, allgemeine technologische und Plattform-Entwicklung vor.
+                All diese Pläne werden eng mit der Bewertung der aktuellen organisatorischen und technischen
+                Möglichkeiten des Kunden entwickelt.
+            </p>
+            <h4>OPERATIVE UND UMSETZUNGSPLANUNG</h4>
+            <p>
+                Während dieser Planungsphase bieten wir einen Produktionsplan, eine Struktur für das Entwicklungsteam,
+                eine Kostenabschätzung und Pläne für Bereitstellung und Wartung an. Jede Planungsphase oder jedes
+                vorbereitete Dokument, Konzeptpapier oder Produktionsplan kann als separate Serviceeinheit betrachtet
+                und bestellt werden.
+            </p>
+        </div>
+    </div>
+    <div id="contacts_form"></div>
+    <div id="page_footer"></div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.4/jquery.nicescroll.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+        $(function () {
+            $("#page_header").load("header.html");
+            $("#page_footer").load("footer.html");
+            $("#contacts_form").load("contacts_form.html");
+        });
+    </script>
+</body>
+
+</html>

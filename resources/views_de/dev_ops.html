@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137794670-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-137794670-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NewGround</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- The favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="manifest" href="../../site.webmanifest">
+    <link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#1f6fa4">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body onload='LoadPageGer()'>
+    <div id="page_header"></div>
+    <div class="container" >
+        <div class="about-text-container text-border">
+            <div class="text-center">
+                <h2 class="block-caption">DevOps-Automatisierung</h2>
+            </div>
+            <h4></h4>
+            <p>Die NewGround Platform Engineers präsentieren einen produktionsbereiten k8s-Cluster mit den wichtigsten
+                benötigten Funktionen, der es Entwicklungsteams ermöglicht, ihre Anwendungen einfach und schnell in
+                einer transparent beschriebenen und leicht zu betreibenden Infrastruktur zu hosten.
+            </p>
+            <h4>Warum ORGANISATIONEN SOLLTEN KUBERNETES NUTZE?</h4>
+            <ul>
+                <li>Skalierbarkeit und Ressourcenmanagement</li>
+                <li>Beschleunigte Entwicklung und Produktlieferung</li>
+                <li>Flexibilität für Multi-Cloud-, Bare-Metal- und Hybrid-Cloud-Umgebungen</li>
+                <li>Verbesserte Verfügbarkeit und Ausfallsicherheit</li>
+            </ul>
+            <h4>Was wird unsere Distribution bieten?</h4>
+            <ul>
+                <li>CI/CD (kontinuierliche Integration und kontinuierliche Bereitstellung)</li>
+                <li>Anwendungsmanagement und Betrieb</li>
+                <li>Überwachung, Beobachtbarkeit, Benachrichtigungen</li>
+                <li>SSO (Single Sign-On), zentralisierter Authentifizierungsdienst</li>
+                <li>Integrierter Container-Registry</li>
+                <li>GPU-Beschleunigung</li>
+            </ul>
+        </div>
+    </div>
+    <div id="contacts_form"></div>
+    <div id="page_footer"></div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.4/jquery.nicescroll.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+        $(function () {
+            $("#page_header").load("header.html");
+            $("#page_footer").load("footer.html");
+            $("#contacts_form").load("contacts_form.html");
+        });
+    </script>
+</body>
+
+</html>
