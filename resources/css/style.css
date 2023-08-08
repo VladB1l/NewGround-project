@@ -58,7 +58,7 @@ body h6 {
     padding-right: 10px;
   }
   .nav-link {
-    font-size: 11px;
+    font-size: 10px;
   }
 }
 
@@ -66,8 +66,10 @@ body h6 {
   .navbar-brand img {
     width: 180px;
   }
+  .workflow ul {
+    padding-left: 0px;
+  }
 }
-
 
 .achievements img,
 .services img,
@@ -122,7 +124,7 @@ body h6 {
   h3 {
     //text-transform: uppercase;
   }
-}*/
+  }*/
 .contact-info {
   padding-bottom: 10px;
   color: #3d3d3d;
@@ -218,10 +220,10 @@ body h6 {
   letter-spacing: 6px;
 }
 
-.text-left{
+.text-left {
   text-align: justify;
 }
-.text-left ul{
+.text-left ul {
   list-style: none;
 }
 
@@ -232,7 +234,6 @@ body h6 {
   width: 1em;
   margin-left: -1em;
 }
-
 
 .about-text-container h4 {
   margin-top: 50px;
